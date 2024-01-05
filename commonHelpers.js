@@ -8,4 +8,4 @@ import{S as l}from"./assets/vendor-c9def49e.js";(function(){const i=document.cre
     />
   </a>
 </li>`).join("");d.innerHTML=g;const h=new l(".gallery a",{captions:!0,captionType:"attr",captionsData:"alt",captionPosition:"bottom",fadeSpeed:150,captionSelector:"img",captionDelay:250});h.on("show.simplelightbox");const o=document.querySelector(".feedback-form"),n="feedback-form-state",s=JSON.parse(localStorage.getItem(n));s&&(o.elements.email.value=s.email||"",o.elements.message.value=s.message||"");o.addEventListener("input",()=>{const a={email:o.elements.email.value,message:o.elements.message.value};localStorage.setItem(n,JSON.stringify(a))});o.addEventListener("submit",a=>{a.preventDefault(),console.log("Data submitted:",JSON.parse(localStorage.getItem(n))),o.reset(),localStorage.removeItem(n)});
-//# sourceMappingURL=commonHelpers3.js.map
+//# sourceMappingURL=commonHelpers.js.map
